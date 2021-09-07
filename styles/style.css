@@ -1,3 +1,7 @@
+/*////////////////////////////*
+/*STILI GLOBALI*/
+/*///////////////////////////*/
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -5,10 +9,47 @@
 }
 *{
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0
 }
+body{
+    padding: 5px;
+}
+div.overlay{ 
+    border-radius: 10px;
+    position: relative;
+}
+div.overlay::before{
+    content: "";
+    display: inline-block;
+    background-color: rgba(0,0,0, 0.2);
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 10px;
+}
+span.red{
+    color: red;
+    font-weight: bold;
+    font-size: 35px
+}
+
+/*////////////////////////////*/
+/*///////////////////////////*/
+/*HEADER*/
+/*///////////////////////////*/
+/*///////////////////////////*/
+
 header{
     padding-left: 1%;
 }
+
+/*////////////////////////////*
+/*HEADING LOGO*/
+/*///////////////////////////*/
+
 header span{
     border-right: solid #b5b5b5;
     border-right-width: thin;
@@ -19,10 +60,13 @@ header span{
 header span img{
     width: 100%
 }
+
+/*////////////////////////////*
+/*NAVBAR*/
+/*///////////////////////////*/
+
 header nav ul{
     list-style: none;
-    padding: 0;
-    margin: 0;
     margin-top: 2%;
 }
 header nav ul li{
@@ -39,6 +83,16 @@ header nav ul li a:hover{
     color: white;
     background-color: #b5b5b5;
 }
+
+/*///////////////////////////*/
+/*////////////////////////////*
+/*MAIN*/
+/*///////////////////////////*/
+/*///////////////////////////*/
+
+/*////////////////////////////*
+/*IMMAGINE PRINCIPALE*/
+/*///////////////////////////*/
 main div.main-image-div{
     margin-top: 3%;
     height: 600px;
@@ -61,6 +115,11 @@ main div.main-image-div:before{
     background-color: rgba(0,0,0, 0.2);
     border-radius: 10px;
 }
+
+/*////////////////////////////*
+/*SCRITTE IMMAGINE PRINCIPALE*/
+/*///////////////////////////*/
+
 main div.main-image-div section{
     position: absolute;
     left: 5%;
@@ -78,61 +137,25 @@ main div.main-image-div section h3{
     font-size: 18px;
 }
 
+/*////////////////////////////*
+/*CONTAINER SEZIONI DI TESTO*/
+/*///////////////////////////*/
 
-
+main img{
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
 main div.main-container{
     width: 100%;
     padding-bottom: 2%;
     margin-top: 2%;
 }
-main div.main-container div.container-top{
-    width: 100%;
-    height: 80px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-main img{
-    width: 100%;
-    border-radius: 10px;
-    margin:0;
-    padding: 0;
-    height: 200px;
-    object-fit: cover;
-}
-div.overlay{ 
-    border-radius: 10px;
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-div.overlay::before{
-    content: "";
-    display: inline-block;
-    background-color: rgba(0,0,0, 0.2);
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    border-radius: 10px;
-}
 main div.main-container h1{
     color: black;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
     font-size: 40px;
-}
-main div.main-container div.container-top h3{
-    color: #b5b5b5;
-    font-size: 20px;
-    margin:0;
-}
-
-main div.main-container div.container-left{
-    width: 20%;
-    float: left;
-    margin-top: 2%;
 }
 main div.main-container section h3{
     color: black;
@@ -140,13 +163,48 @@ main div.main-container section h3{
     margin-top: 15px;
 }
 main div.main-container section p{
+    padding-top: 10px;
     color: #b5b5b5;
 }
+/*////////////////////////////*
+/*CONTAINER TITOLO*/
+/*///////////////////////////*/
+
+main div.main-container div.container-top{
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+main div.main-container div.container-top h3{
+    color: #b5b5b5;
+    font-size: 20px;
+    margin:0;
+}
+
+/*////////////////////////////*
+/*CONTAINER SINISTRA*/
+/*///////////////////////////*/
+
+main div.main-container div.container-left{
+    width: 20%;
+    float: left;
+    margin-top: 2%;
+}
+
+/*////////////////////////////*
+/*CONTAINER DESTRA*/
+/*///////////////////////////*/
+
 main div.main-container div.container-right{
     width: 20%;
     float: right;
     margin-top: 2%;
 }
+/*////////////////////////////*
+/*CONTAINER CENTERALE*/
+/*///////////////////////////*/
+
 main div.main-container div.container-center{
     width: 56%;
     float: left;
@@ -154,6 +212,13 @@ main div.main-container div.container-center{
     margin-left: 2%;
     margin-right: 2%;
 }
+
+/*////////////////////////////*/
+/*///////////////////////////*/
+/*FOOTER*/
+/*///////////////////////////*/
+/*///////////////////////////*/
+
 footer div{
     margin-top: 1%;
 }
@@ -161,9 +226,4 @@ footer div h2{
     font-size: 20px;
     text-align: center;
     font-weight: 200;
-}
-span.red{
-    color: red;
-    font-weight: bold;
-    font-size: 35px
 }
