@@ -1,0 +1,169 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    padding-left: 1%;
+}
+header span{
+    border-right: solid #b5b5b5;
+    border-right-width: thin;
+    padding-right: 5%;
+    display: inline-block;
+    width: 10%;
+}
+header span img{
+    width: 100%
+}
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 2%;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    color: #b5b5b5;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 3px 7px;
+    border-radius: 5px
+}
+header nav ul li a:hover{
+    color: white;
+    background-color: #b5b5b5;
+}
+main div.main-image-div{
+    margin-top: 3%;
+    height: 600px;
+    width: 100%;
+    background-color: #e1d67a;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+main div.main-image-div:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.2);
+    border-radius: 10px;
+}
+main div.main-image-div section{
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    width: 50%;
+}
+main div.main-image-div section h2, h3{
+    color: white;
+    font-weight: 400;
+    font-size: 31px;
+    margin:0;
+    padding:0
+}
+main div.main-image-div section h3{
+    font-size: 18px;
+}
+
+
+
+main div.main-container{
+    width: 100%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+}
+main div.main-container div.container-top{
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+main img{
+    width: 100%;
+    border-radius: 10px;
+    margin:0;
+    padding: 0;
+    height: 200px;
+    object-fit: cover;
+}
+div.overlay{ 
+    border-radius: 10px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+div.overlay::before{
+    content: "";
+    display: inline-block;
+    background-color: rgba(0,0,0, 0.2);
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 10px;
+}
+main div.main-container h1{
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+main div.main-container div.container-top h3{
+    color: #b5b5b5;
+    font-size: 20px;
+    margin:0;
+}
+
+main div.main-container div.container-left{
+    width: 20%;
+    float: left;
+    margin-top: 2%;
+}
+main div.main-container section h3{
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+}
+main div.main-container section p{
+    color: #b5b5b5;
+}
+main div.main-container div.container-right{
+    width: 20%;
+    float: right;
+    margin-top: 2%;
+}
+main div.main-container div.container-center{
+    width: 56%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+footer div{
+    margin-top: 1%;
+}
+footer div h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+}
+span.red{
+    color: red;
+    font-weight: bold;
+    font-size: 35px
+}
